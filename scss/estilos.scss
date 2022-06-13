@@ -1,0 +1,102 @@
+/*Google Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/*Variables*/
+
+$color1: white;
+$font1: 'Anton', sans-serif;
+$size1: 50px;
+$size2: 10px;
+
+/*Codigo*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+#body {
+    background-image: url(../assets/imagenes/crowd.jpg);
+    background-size: cover;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #0f0e1f;
+
+    .titulo {
+        color: $color1;
+        font-size: $size1;
+        font-family: $font1;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .subtitulo {
+        color: $color1;
+        font-family: $font1;
+        text-align: center;
+        padding-bottom: $size2;
+    }
+
+        ul {
+        text-align: center;
+        font-size: 15px;
+        font-family: $font1;
+        display: flex;
+        justify-content: space-between;
+        padding-left: $size1;
+        padding-right: $size1;
+        padding-top: $size2;
+        padding-bottom: $size2;
+        background-color: #1b1933;
+    }
+
+        li {
+            display: inline;
+            color: $color1;
+            text-decoration: none;
+        }
+
+}
+
+.titulo2 {
+    color: $color1;
+    font-family: $font1;
+    font-size: 70px;
+    letter-spacing: 3px;
+    padding-top: $size1;
+    padding-left: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 2px 2px black;
+}
+
+.texto {
+    color: $color1;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    background-color: rgb(15, 14, 31, 0.5);
+    margin-left: 40px;
+    margin-right: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.texto:hover {
+        filter: opacity(0.9);
+        transform: scale(1.04);
+}
+
+@import "disco";
+@import "footer";

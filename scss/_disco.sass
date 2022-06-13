@@ -1,0 +1,32 @@
+.textodisc {
+        color: $color1;
+        font-family: $font1;
+        font-size: 30px;
+        letter-spacing: 3px;
+        padding-top: 40px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+
+        animation-name: aparecer;
+
+        animation-duration: 1s;
+        animation-delay: 0s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+
+        @keyframes aparecer {
+            0% {
+            opacity: 1;
+        }
+
+            100% {
+            opacity: 0;
+        }
+    }
+}
+
+.link:hover {
+    color: $color1;
+    background-color: red;
+}
